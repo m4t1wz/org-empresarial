@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mostaza - Presentación Organización Empresarial</title>
+  <meta name="description" content="Presentación interactiva y dinámica sobre la estructura organizativa, entorno, sistemas y análisis estratégico de Mostaza.">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <div class="app-viewport">
+
+    <!-- Top Bar Header -->
+    <header class="top-header">
+      <div class="brand-badge">
+        <div class="brand-logo-container">
+          <div class="mostaza-m-icon">M</div>
+          <span class="brand-logo-text">MOSTAZA</span>
+        </div>
+        <div class="brand-title">Organización Empresarial</div>
+      </div>
+
+      <div class="top-controls">
+        <div class="slide-counter-chip" id="slideCounterChip">01 / 11</div>
+      </div>
+    </header>
+
+    <!-- Top Progress Bar -->
+    <div class="progress-bar-container">
+      <div class="progress-bar-fill" id="progressBarFill"></div>
+    </div>
+
+    <!-- Presentation Main Canvas -->
+    <main class="slides-stage" id="slidesStage">
+
+      <!-- SLIDE 1: HISTORIA -->
+      <section class="slide-frame active" data-slide="1">
+        <div class="slide-content-wrapper">
+          <div class="section-header">
+            <div class="section-tag">
+              <span class="mini-logo-icon">M</span> Origen & Trayectoria
+            </div>
+            <h1 class="slide-title">Un poco de historia de Mostaza</h1>
+          </div>
+          
+          <div class="hero-grid">
+            <div class="content-card">
+              <div class="card-hero-header">
+                <h2 class="card-title">Empresa Nacional de Comida Rápida</h2>
+              </div>
+              <p class="quote-text" style="font-style: normal; font-size: 1.15rem; line-height: 1.75;">
+                "Mostaza es una empresa argentina dedicada al rubro de la comida rápida. Fue fundada en 1998 por Federico Pablo Aste y Christian Galdeano Alvarado con el objetivo de ofrecer una alternativa nacional frente a las grandes cadenas internacionales del sector."
+              </p>
+            </div>
+            
+            <div class="hero-image-card">
+              <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=1000&q=80" alt="Hamburguesas Mostaza">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 2: ACTIVIDAD, TAMAÑO Y SECTOR -->
+      <section class="slide-frame" data-slide="2">
+        <div class="slide-content-wrapper">
+          <div class="section-header">
+            <div class="section-tag">
+              <span class="mini-logo-icon">M</span> Perfil de la Organización
+            </div>
+            <h1 class="slide-title">Actividad, Tamaño y Sector</h1>
+          </div>
+
+          <div class="grid-3">
+            <!-- Actividad -->
+            <div class="content-card">
+              <div class="card-hero-header">
+                <h2 class="card-title">Actividad</h2>
+              </div>
+              <ul class="custom-list">
+                <li class="list-item-card">
+                  <div class="num-pill">1</div>
+                  <div class="list-item-text">Elaboración y venta de comida rápida</div>
+                </li>
+                <li class="list-item-card">
+                  <div class="num-pill">2</div>
+                  <div class="list-item-text">Atención al cliente</div>
+                </li>
+                <li class="list-item-card">
+                  <div class="num-pill">3</div>
+                  <div class="list-item-text">Caja y entrega de pedidos</div>
+                </li>
+                <li class="list-item-card">
+                  <div class="num-pill">4</div>
+                  <div class="list-item-text">Marketing y promociones mediante</div>
+                </li>
+                <li class="list-item-card">
+                  <div class="num-pill">5</div>
+                  <div class="list-item-text">Pedidos mediante aplicaciones</div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Tamaño -->
+            <div class="content-card">
+              <div class="card-hero-header">
+                <h2 class="card-title">Tamaño</h2>
+              </div>
+              <ul class="custom-list">
+                <li class="list-item-card">
+                  <div class="num-pill yellow-pill">1</div>
+                  <div class="list-item-text">Empresa nacional grande</div>
+                </li>
+                <li class="list-item-card">
+                  <div class="num-pill yellow-pill">2</div>
+                  <div class="list-item-text">Más de 200 sucursales</div>
+                </li>
+                <li class="list-item-card">
+                  <div class="num-pill yellow-pill">3</div>
+                  <div class="list-item-text">Presencia en Paraguay, Uruguay y Bolivia</div>
+                </li>
+                <li class="list-item-card">
+                  <div class="num-pill yellow-pill">4</div>
+                  <div class="list-item-text">Gran cantidad de empleados</div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Sector -->
+            <div class="content-card">
+              <div class="card-hero-header">
+                <h2 class="card-title">Sector</h2>
+              </div>
+              <ul class="custom-list" style="margin-bottom: 1rem;">
+                <li class="list-item-card">
+                  <div class="num-pill">1</div>
+                  <div class="list-item-text">Sector terciario</div>
+                </li>
+                <li class="list-item-card">
+                  <div class="num-pill">2</div>
+                  <div class="list-item-text">Rubro gastronómico</div>
+                </li>
+              </ul>
+              
+              <div style="border-radius: var(--radius-md); overflow: hidden; height: 140px; margin-top: auto;">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Local Gastronómico Mostaza" style="width:100%; height:100%; object-fit:cover;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 3: MICROENTORNO Y MACROENTORNO -->
+      <section class="slide-frame" data-slide="3">
+        <div class="slide-content-wrapper">
+          <div class="section-header">
+            <div class="section-tag">
+              <span class="mini-logo-icon">M</span> Análisis de Contexto
+            </div>
+            <h1 class="slide-title">Microentorno y Macroentorno</h1>
+          </div>
+
+          <div class="grid-2">
+            <!-- Microentorno -->
+            <div class="content-card">
+              <div class="card-hero-header">
+                <h2 class="card-title">Microentorno</h2>
+              </div>
+              <p class="slide-subtitle" style="margin-bottom: 0.85rem;">
+                El microentorno son los factores cercanos a la organización que influyen directamente en su funcionamiento y sobre los cuales la empresa puede tener cierto grado de control.
+              </p>
+              <ul class="custom-list">
+                <li class="list-item-card">
+                  <div class="num-pill">1</div>
+                  <div class="list-item-text">Clientes</div>
+                </li>
+                <li class="list-item-card">
+                  <div class="num-pill">2</div>
+                  <div class="list-item-text">Proveedores</div>
+                </li>
+                <li class="list-item-card">
+                  <div class="num-pill">3</div>
+                  <div class="list-item-text">Intermediarios</div>
+                </li>
+                <li class="list-item-card">
+                  <div class="num-pill">4</div>
+                  <div class="list-item-text">Empleados</div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Macroentorno -->
+            <div class="content-card">
+              <div class="card-hero-header">
+                <h2 class="card-title">Macroentorno</h2>
+              </div>
+              <p class="slide-subtitle" style="margin-bottom: 0.85rem;">
+                El macroentorno son factores externos que afectan a la organización, pero que la empresa no puede controlar directamente.
+              </p>
+              <ul class="custom-list">
+                <li class="list-item-card">
+                  <div class="num-pill yellow-pill">1</div>
+                  <div class="list-item-text">Económico</div>
+                </li>
+                <li class="list-item-card">
+                  <div class="num-pill yellow-pill">2</div>
+                  <div class="list-item-text">Tecnológico</div>
+                </li>
+                <li class="list-item-card">
+                  <div class="num-pill yellow-pill">3</div>
+                  <div class="list-item-text">Político y legal</div>
+                </li>
+                <li class="list-item-card">
+                  <div class="num-pill yellow-pill">4</div>
+                  <div class="list-item-text">Cultural</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 4: MISIÓN Y VISIÓN -->
+      <section class="slide-frame" data-slide="4">
+        <div class="slide-content-wrapper">
+          <div class="section-header">
+            <div class="section-tag">
+              <span class="mini-logo-icon">M</span> Propósito Institucional
+            </div>
+            <h1 class="slide-title">Misión y Visión</h1>
+          </div>
+
+          <div class="grid-2">
+            <!-- Misión -->
+            <div class="quote-card">
+              <div class="quote-badge">Misión</div>
+              <p class="quote-text">
+                "La misión de Mostaza es ofrecer alimentos de calidad, con rapidez y buen servicio, brindando una experiencia agradable a sus clientes y satisfaciendo sus necesidades a precios accesibles."
+              </p>
+            </div>
+
+            <!-- Visión -->
+            <div class="quote-card" style="background: var(--pastel-yellow-bg);">
+              <div class="quote-badge" style="background: #1A1A1A; color: var(--pastel-yellow);">Visión</div>
+              <p class="quote-text">
+                "La visión de Mostaza es continuar creciendo y consolidarse como una de las principales cadenas de comida rápida del país, expandiendo su presencia y mejorando constantemente la calidad de sus productos y servicios."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 5: PROCESO ADMINISTRATIVO -->
+      <section class="slide-frame" data-slide="5">
+        <div class="slide-content-wrapper">
+          <div class="section-header">
+            <div class="section-tag">
+              <span class="mini-logo-icon">M</span> Gestión Empresarial
+            </div>
+            <h1 class="slide-title">Proceso Administrativo</h1>
+            <p class="slide-subtitle">
+              El proceso administrativo es una forma de organizar y dirigir una empresa para que pueda cumplir sus objetivos. Sirve para ordenar las actividades, tomar mejores decisiones y lograr que los recursos de la organización se utilicen correctamente.
+            </p>
+          </div>
+
+          <div class="process-flow">
+            <!-- Planificación -->
+            <div class="process-step-card">
+              <div class="step-num-tag">FASE 01</div>
+              <h3 class="step-title">Planificación</h3>
+              <ul class="custom-list" style="gap: 0.5rem;">
+                <li class="list-item-card" style="padding: 0.5rem 0.75rem;">
+                  <div class="num-pill" style="width:22px; height:22px; min-width:22px; font-size:0.75rem;">1</div>
+                  <div class="list-item-text" style="font-size:0.88rem;">Definir objetivos y estrategias.</div>
+                </li>
+                <li class="list-item-card" style="padding: 0.5rem 0.75rem;">
+                  <div class="num-pill" style="width:22px; height:22px; min-width:22px; font-size:0.75rem;">2</div>
+                  <div class="list-item-text" style="font-size:0.88rem;">Diseñar promociones, nuevos productos y planes de expansión.</div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Organización -->
+            <div class="process-step-card">
+              <div class="step-num-tag" style="color: #0288D1;">FASE 02</div>
+              <h3 class="step-title">Organización</h3>
+              <ul class="custom-list" style="gap: 0.5rem;">
+                <li class="list-item-card" style="padding: 0.5rem 0.75rem;">
+                  <div class="num-pill" style="width:22px; height:22px; min-width:22px; font-size:0.75rem; background: #0288D1;">1</div>
+                  <div class="list-item-text" style="font-size:0.88rem;">Distribuir tareas y responsabilidades.</div>
+                </li>
+                <li class="list-item-card" style="padding: 0.5rem 0.75rem;">
+                  <div class="num-pill" style="width:22px; height:22px; min-width:22px; font-size:0.75rem; background: #0288D1;">2</div>
+                  <div class="list-item-text" style="font-size:0.88rem;">Asignar recursos a las sucursales.</div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Dirección -->
+            <div class="process-step-card">
+              <div class="step-num-tag" style="color: #F57C00;">FASE 03</div>
+              <h3 class="step-title">Dirección</h3>
+              <ul class="custom-list" style="gap: 0.5rem;">
+                <li class="list-item-card" style="padding: 0.5rem 0.75rem;">
+                  <div class="num-pill" style="width:22px; height:22px; min-width:22px; font-size:0.75rem; background: #F57C00;">1</div>
+                  <div class="list-item-text" style="font-size:0.88rem;">Supervisar a los empleados.</div>
+                </li>
+                <li class="list-item-card" style="padding: 0.5rem 0.75rem;">
+                  <div class="num-pill" style="width:22px; height:22px; min-width:22px; font-size:0.75rem; background: #F57C00;">2</div>
+                  <div class="list-item-text" style="font-size:0.88rem;">Coordinar el trabajo diario para cumplir los objetivos.</div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Control -->
+            <div class="process-step-card">
+              <div class="step-num-tag" style="color: #2E7D32;">FASE 04</div>
+              <h3 class="step-title">Control</h3>
+              <ul class="custom-list" style="gap: 0.5rem;">
+                <li class="list-item-card" style="padding: 0.5rem 0.75rem;">
+                  <div class="num-pill" style="width:22px; height:22px; min-width:22px; font-size:0.75rem; background: #2E7D32;">1</div>
+                  <div class="list-item-text" style="font-size:0.88rem;">Verificar la calidad de los productos y la atención.</div>
+                </li>
+                <li class="list-item-card" style="padding: 0.5rem 0.75rem;">
+                  <div class="num-pill" style="width:22px; height:22px; min-width:22px; font-size:0.75rem; background: #2E7D32;">2</div>
+                  <div class="list-item-text" style="font-size:0.88rem;">Evaluar resultados y corregir errores para mejorar.</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 6: SISTEMAS: ABIERTO Y CERRADO -->
+      <section class="slide-frame" data-slide="6">
+        <div class="slide-content-wrapper">
+          <div class="section-header">
+            <div class="section-tag">
+              <span class="mini-logo-icon">M</span> Teoría de Sistemas
+            </div>
+            <h1 class="slide-title">Los tipos de sistemas: Abierto y cerrado</h1>
+            <p class="slide-subtitle">
+              Es un conjunto de elementos relacionados entre si funcionando para lograr un objetivo.
+            </p>
+          </div>
+
+          <div class="grid-2">
+            <div class="content-card">
+              <div class="card-hero-header">
+                <h2 class="card-title">Definiciones de Sistema</h2>
+              </div>
+              <ul class="custom-list" style="margin-bottom: 1rem;">
+                <li class="list-item-card">
+                  <div class="num-pill">1</div>
+                  <div class="list-item-text">
+                    Un sistema abierto es aquel que interactrua con el entorno, recibe algo, lo transforma generando resultados, y esos resultados generan retroalimentación.
+                  </div>
+                </li>
+                <li class="list-item-card">
+                  <div class="num-pill yellow-pill">2</div>
+                  <div class="list-item-text">
+                    Un sistema cerrado tiene poca o ninguna interacción con el entorno, no recibe, o recibe muy poca retroalimentación
+                  </div>
+                </li>
+              </ul>
+
+              <div>
+                <h3 style="font-family:'Outfit'; font-size:1.15rem; margin-bottom: 0.35rem; color: var(--primary-red); font-weight:700;">Mostaza como sistema abierto</h3>
+                <h4 style="font-size: 0.92rem; color: var(--text-dark); margin-bottom: 0.35rem; font-weight:700;">¿Cuándo se considera sistema abierto una organización?</h4>
+                <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-muted);">
+                  Una organización es un sistema abierto porque interactúa constantemente con su entorno: recibe recursos (entradas), los transforma mediante procesos y genera productos o servicios (salidas). Y también utiliza la retroalimentación para mejorar y adaptarse al entorno.
+                </p>
+              </div>
+            </div>
+
+            <!-- Image in-output.png -->
+            <div class="user-diagram-card">
+              <img src="in-output.png" alt="Esquema Entradas Procesos Salidas Retroalimentación Mostaza">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 7: ANÁLISIS FODA -->
+      <section class="slide-frame" data-slide="7">
+        <div class="slide-content-wrapper">
+          <div class="section-header">
+            <div class="section-tag">
+              <span class="mini-logo-icon">M</span> Diagnóstico Estratégico
+            </div>
+            <h1 class="slide-title">Análisis FODA</h1>
+            <p class="slide-subtitle">
+              El análisis FODA es una herramienta que permite evaluar la situación de una organización para conocer sus aspectos positivos y negativos, tanto internos como externos.
+              <br><strong>En el caso de mostaza</strong>
+            </p>
+          </div>
+
+          <div class="foda-container">
+            <!-- Fortalezas -->
+            <div class="foda-card fortalezas">
+              <div class="foda-header">
+                <div class="foda-badge">F</div>
+                <div class="foda-title">Fortalezas</div>
+              </div>
+              <ul class="custom-list">
+                <li class="list-item-card" style="padding:0.45rem 0.75rem;">
+                  <div class="num-pill" style="background:#2E7D32; width:22px; height:22px; min-width:22px; font-size:0.75rem;">1</div>
+                  <div class="list-item-text">Marca argentina reconocida.</div>
+                </li>
+                <li class="list-item-card" style="padding:0.45rem 0.75rem;">
+                  <div class="num-pill" style="background:#2E7D32; width:22px; height:22px; min-width:22px; font-size:0.75rem;">2</div>
+                  <div class="list-item-text">Amplia red de sucursales.</div>
+                </li>
+                <li class="list-item-card" style="padding:0.45rem 0.75rem;">
+                  <div class="num-pill" style="background:#2E7D32; width:22px; height:22px; min-width:22px; font-size:0.75rem;">3</div>
+                  <div class="list-item-text">Productos y procesos estandarizados.</div>
+                </li>
+                <li class="list-item-card" style="padding:0.45rem 0.75rem;">
+                  <div class="num-pill" style="background:#2E7D32; width:22px; height:22px; min-width:22px; font-size:0.75rem;">4</div>
+                  <div class="list-item-text">Buen posicionamiento en el mercado.</div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Oportunidades -->
+            <div class="foda-card oportunidades">
+              <div class="foda-header">
+                <div class="foda-badge">O</div>
+                <div class="foda-title">Oportunidades</div>
+              </div>
+              <ul class="custom-list">
+                <li class="list-item-card" style="padding:0.45rem 0.75rem;">
+                  <div class="num-pill" style="background:#0288D1; width:22px; height:22px; min-width:22px; font-size:0.75rem;">1</div>
+                  <div class="list-item-text">Expansión a nuevos mercados.</div>
+                </li>
+                <li class="list-item-card" style="padding:0.45rem 0.75rem;">
+                  <div class="num-pill" style="background:#0288D1; width:22px; height:22px; min-width:22px; font-size:0.75rem;">2</div>
+                  <div class="list-item-text">Crecimiento de los pedidos por aplicaciones.</div>
+                </li>
+                <li class="list-item-card" style="padding:0.45rem 0.75rem;">
+                  <div class="num-pill" style="background:#0288D1; width:22px; height:22px; min-width:22px; font-size:0.75rem;">3</div>
+                  <div class="list-item-text">Incorporación de nuevas promociones.</div>
+                </li>
+                <li class="list-item-card" style="padding:0.45rem 0.75rem;">
+                  <div class="num-pill" style="background:#0288D1; width:22px; height:22px; min-width:22px; font-size:0.75rem;">4</div>
+                  <div class="list-item-text">Interés mas alto al ser una marca nacional</div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Debilidades -->
+            <div class="foda-card debilidades">
+              <div class="foda-header">
+                <div class="foda-badge">D</div>
+                <div class="foda-title">Debilidades</div>
+              </div>
+              <ul class="custom-list">
+                <li class="list-item-card" style="padding:0.45rem 0.75rem;">
+                  <div class="num-pill" style="background:#F57C00; width:22px; height:22px; min-width:22px; font-size:0.75rem;">1</div>
+                  <div class="list-item-text">Menor variedad de comida</div>
+                </li>
+                <li class="list-item-card" style="padding:0.45rem 0.75rem;">
+                  <div class="num-pill" style="background:#F57C00; width:22px; height:22px; min-width:22px; font-size:0.75rem;">2</div>
+                  <div class="list-item-text">Alta estructura de costo</div>
+                </li>
+                <li class="list-item-card" style="padding:0.45rem 0.75rem;">
+                  <div class="num-pill" style="background:#F57C00; width:22px; height:22px; min-width:22px; font-size:0.75rem;">3</div>
+                  <div class="list-item-text">Menor capacidad de adaptación en los locales</div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Amenazas -->
+            <div class="foda-card amenazas">
+              <div class="foda-header">
+                <div class="foda-badge">A</div>
+                <div class="foda-title">Amenazas</div>
+              </div>
+              <ul class="custom-list">
+                <li class="list-item-card" style="padding:0.45rem 0.75rem;">
+                  <div class="num-pill" style="background:#D32F2F; width:22px; height:22px; min-width:22px; font-size:0.75rem;">1</div>
+                  <div class="list-item-text">Inflación y cambios en la economía.</div>
+                </li>
+                <li class="list-item-card" style="padding:0.45rem 0.75rem;">
+                  <div class="num-pill" style="background:#D32F2F; width:22px; height:22px; min-width:22px; font-size:0.75rem;">2</div>
+                  <div class="list-item-text">Aumento del precio de las materias primas.</div>
+                </li>
+                <li class="list-item-card" style="padding:0.45rem 0.75rem;">
+                  <div class="num-pill" style="background:#D32F2F; width:22px; height:22px; min-width:22px; font-size:0.75rem;">3</div>
+                  <div class="list-item-text">Competencia de cadenas nacionales e internacionales.</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 8: ESTRUCTURA ORGANIZACIONAL -->
+      <section class="slide-frame" data-slide="8">
+        <div class="slide-content-wrapper">
+          <div class="section-header">
+            <div class="section-tag">
+              <span class="mini-logo-icon">M</span> Modelo Operativo
+            </div>
+            <h1 class="slide-title">Estructura organizacional</h1>
+            <p class="slide-subtitle">
+              La estructura organizacional es la forma en que una empresa organiza y distribuye sus actividades, responsabilidades y niveles de autoridad.
+            </p>
+          </div>
+
+          <div class="grid-2">
+            <!-- Burocracia mecánica -->
+            <div class="content-card">
+              <div class="card-hero-header">
+                <h2 class="card-title">Burocracia mecánica</h2>
+              </div>
+              <p style="font-size: 0.9rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.6rem;">
+                Mostaza se describe principalmente como una Burocracia mecánica. Ya que:
+              </p>
+              <ul class="custom-list">
+                <li class="list-item-card">
+                  <div class="num-pill">1</div>
+                  <div class="list-item-text">Organización basada en normas, procedimientos y control estricto.</div>
+                </li>
+                <li class="list-item-card">
+                  <div class="num-pill">2</div>
+                  <div class="list-item-text">Las tareas son rutinarias y estandarizadas para asegurar que todas las sucursales funcionen igual.</div>
+                </li>
+                <li class="list-item-card">
+                  <div class="num-pill">3</div>
+                  <div class="list-item-text">Permite mantener eficiencia, orden y uniformidad en productos y atención al cliente.</div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Organización Mecanicista & Clasificación -->
+            <div class="content-card">
+              <p style="font-size: 0.85rem; font-weight: 700; color: var(--primary-red); margin-bottom: 0.35rem; text-transform: uppercase; letter-spacing: 0.5px;">
+                Pero también se describe con:
+              </p>
+              <h3 style="font-family:'Outfit'; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.4rem;">Organización Mecanicista</h3>
+              <ul class="custom-list" style="margin-bottom: 1rem;">
+                <li class="list-item-card" style="padding: 0.45rem 0.75rem;">
+                  <div class="num-pill yellow-pill" style="width:20px; height:20px; min-width:20px; font-size:0.7rem;">•</div>
+                  <div class="list-item-text" style="font-size:0.85rem;">Actividades rutinarias y predecibles.</div>
+                </li>
+                <li class="list-item-card" style="padding: 0.45rem 0.75rem;">
+                  <div class="num-pill yellow-pill" style="width:20px; height:20px; min-width:20px; font-size:0.7rem;">•</div>
+                  <div class="list-item-text" style="font-size:0.85rem;">Alta división del trabajo: cada empleado cumple una tarea específica.</div>
+                </li>
+                <li class="list-item-card" style="padding: 0.45rem 0.75rem;">
+                  <div class="num-pill yellow-pill" style="width:20px; height:20px; min-width:20px; font-size:0.7rem;">•</div>
+                  <div class="list-item-text" style="font-size:0.85rem;">Autoridad centralizada y cadena de mando rígida.</div>
+                </li>
+                <li class="list-item-card" style="padding: 0.45rem 0.75rem;">
+                  <div class="num-pill yellow-pill" style="width:20px; height:20px; min-width:20px; font-size:0.7rem;">•</div>
+                  <div class="list-item-text" style="font-size:0.85rem;">Los empleados siguen roles y procedimientos establecidos.</div>
+                </li>
+              </ul>
+
+              <h3 style="font-family:'Outfit'; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.4rem;">Clasificación según Finalidad y Producción</h3>
+              <ul class="custom-list">
+                <li class="list-item-card" style="padding: 0.45rem 0.75rem;">
+                  <div class="num-pill" style="width:20px; height:20px; min-width:20px; font-size:0.7rem;">•</div>
+                  <div class="list-item-text" style="font-size:0.85rem;">Organización con fines de lucro: busca obtener beneficios económicos.</div>
+                </li>
+                <li class="list-item-card" style="padding: 0.45rem 0.75rem;">
+                  <div class="num-pill" style="width:20px; height:20px; min-width:20px; font-size:0.7rem;">•</div>
+                  <div class="list-item-text" style="font-size:0.85rem;">Productora de bienes y servicios: combina la elaboración de alimentos con la atención al cliente.</div>
+                </li>
+                <li class="list-item-card" style="padding: 0.45rem 0.75rem;">
+                  <div class="num-pill" style="width:20px; height:20px; min-width:20px; font-size:0.7rem;">•</div>
+                  <div class="list-item-text" style="font-size:0.85rem;">Gran dimensión: posee alcance nacional e internacional y una estructura corporativa amplia.</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 9: ORGANIGRAMA Y NIVELES JERÁRQUICOS -->
+      <section class="slide-frame" data-slide="9">
+        <div class="slide-content-wrapper">
+          <div class="section-header">
+            <div class="section-tag">
+              <span class="mini-logo-icon">M</span> Jerarquía & Organización
+            </div>
+            <h1 class="slide-title">Organigrama y niveles jerárquicos:</h1>
+          </div>
+
+          <div class="grid-2">
+            <div class="content-card">
+              <div class="card-hero-header">
+                <h2 class="card-title">Tipos de Organizaciones</h2>
+              </div>
+              <p class="slide-subtitle" style="margin-bottom: 1.25rem;">
+                Existen dos tipos de organizaciones, Formal e Informal.
+              </p>
+              
+              <div class="quote-card" style="border-left: 4px solid var(--primary-red); padding: 1.25rem 1.5rem;">
+                <p style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark);">
+                  Mostaza es una Organización Formal, ya que posee una jerarquía.
+                </p>
+              </div>
+
+              <div style="border-radius: var(--radius-md); overflow: hidden; height: 160px; margin-top: auto;">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Equipo de trabajo jerárquico Mostaza" style="width:100%; height:100%; object-fit:cover;">
+              </div>
+            </div>
+
+            <!-- Image organigrama.png -->
+            <div class="user-diagram-card">
+              <img src="organigrama.png" alt="Organigrama y Niveles Jerárquicos de Mostaza">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 10: SISTEMAS DE INFORMACIÓN -->
+      <section class="slide-frame" data-slide="10">
+        <div class="slide-content-wrapper">
+          <div class="section-header">
+            <div class="section-tag">
+              <span class="mini-logo-icon">M</span> Infraestructura Digital
+            </div>
+            <h1 class="slide-title">Sistemas de información</h1>
+            <p class="slide-subtitle">
+              Mostaza es una empresa que implementa varias tecnologías de automatización e informacion para mejorar la atención al cliente.
+            </p>
+          </div>
+
+          <div class="grid-2">
+            <div class="content-card">
+              <ul class="custom-list">
+                <li class="list-item-card">
+                  <div class="num-pill">1</div>
+                  <div class="list-item-text">
+                    <strong>Sistema POS (Point of Sale):</strong> registra las ventas, calcula el pago y envía el pedido a cocina.
+                  </div>
+                </li>
+                <li class="list-item-card">
+                  <div class="num-pill">2</div>
+                  <div class="list-item-text">
+                    <strong>KDS (Kitchen Display System):</strong> muestra los pedidos en pantallas para organizar la preparación.
+                  </div>
+                </li>
+                <li class="list-item-card">
+                  <div class="num-pill">3</div>
+                  <div class="list-item-text">
+                    <strong>Aplicación móvil:</strong> permite realizar pedidos, pagar y seguir el estado del pedido.
+                  </div>
+                </li>
+                <li class="list-item-card">
+                  <div class="num-pill">4</div>
+                  <div class="list-item-text">
+                    <strong>Red interna (LAN/WiFi):</strong> conecta todos los dispositivos del local para compartir información.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="content-card">
+              <ul class="custom-list" style="margin-bottom: 1rem;">
+                <li class="list-item-card">
+                  <div class="num-pill yellow-pill">5</div>
+                  <div class="list-item-text">
+                    <strong>Base de datos:</strong> almacena información sobre ventas, productos, clientes, stock y pedidos.
+                  </div>
+                </li>
+                <li class="list-item-card">
+                  <div class="num-pill yellow-pill">6</div>
+                  <div class="list-item-text">
+                    <strong>Sistemas de pago electrónicos:</strong> procesan pagos con tarjetas, QR y billeteras virtuales.
+                  </div>
+                </li>
+                <li class="list-item-card">
+                  <div class="num-pill yellow-pill">7</div>
+                  <div class="list-item-text">
+                    <strong>Plataformas de delivery:</strong> gestionan los pedidos a domicilio y coordinan la entrega.
+                  </div>
+                </li>
+              </ul>
+
+              <div style="border-radius: var(--radius-md); overflow: hidden; height: 130px; margin-top: auto;">
+                <img src="https://images.unsplash.com/photo-1556742031-c6961e8560b0?auto=format&fit=crop&w=800&q=80" alt="Tecnología POS y Pagos Electrónicos Mostaza" style="width:100%; height:100%; object-fit:cover;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 11: CONCLUSIÓN -->
+      <section class="slide-frame" data-slide="11">
+        <div class="slide-content-wrapper">
+          <div class="section-header">
+            <div class="section-tag">
+              <span class="mini-logo-icon">M</span> Síntesis Final
+            </div>
+            <h1 class="slide-title">Conclusión</h1>
+          </div>
+
+          <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+            <div class="content-card" style="padding: 2.5rem 3rem; max-width: 950px; background: #FFFFFF; border-left: 6px solid var(--primary-red); box-shadow: var(--shadow-card);">
+              <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1.25rem;">
+                <div class="brand-logo-container">
+                  <div class="mostaza-m-icon">M</div>
+                  <span class="brand-logo-text">MOSTAZA</span>
+                </div>
+                <h2 class="card-title" style="font-size: 1.5rem; color: var(--primary-red);">
+                  Resumen del Análisis Organizacional
+                </h2>
+              </div>
+
+              <p class="quote-text" style="font-style: normal; font-size: 1.25rem; line-height: 1.75; color: var(--text-dark);">
+                Este análisis permitió comprender cómo una empresa aplica la teoría en la práctica para organizar sus recursos, tomar decisiones y alcanzar sus objetivos. En conclusión, Mostaza es un ejemplo de una organización formal y de gran dimensión, que utiliza una estructura organizada y procesos definidos para brindar un servicio eficiente y mantener su crecimiento.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Floating Navigation Buttons (Right Margin) -->
+    <nav class="floating-nav-container">
+      <button class="floating-nav-btn" id="btnPrevSlide" title="Diapositiva Anterior (←)">
+        <i data-lucide="chevron-left"></i>
+        <span class="key-hint">Presiona ←</span>
+      </button>
+      <button class="floating-nav-btn" id="btnNextSlide" title="Diapositiva Siguiente (→)">
+        <i data-lucide="chevron-right"></i>
+        <span class="key-hint">Presiona →</span>
+      </button>
+    </nav>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
